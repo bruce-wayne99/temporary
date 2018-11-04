@@ -13,7 +13,9 @@ divergence](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence) b
 of the points in the map.
 
 ### Stage-1 
-Given a set of N dimensional points x1,x2...xN t-SNE first computes the probability p<sub>ij</sub> that are proportional to the similarity of objects.
+Given a set of N dimensional points x1,x2...xN t-SNE first computes the probability p<sub>ij</sub> that are proportional to the similarity of objects as follows:
+
+  ![alt text](https://wikimedia.org/api/rest_v1/media/math/render/svg/2cc3ef3b4d237787cd82e5ef638d96d642a1e43d)
 
 ### Stage-2
 In the second step t-SNE aims to learn a lower dimensional map y1,y2,y3...yN where dimension of yi < dimension of xi that reflects similarities in p<sub>ij</sub> as well as possible. To this end, it measure similarities q<sub>ij</sub> between two points in the map yi and yj using a very similar approach.
