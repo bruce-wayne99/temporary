@@ -34,3 +34,6 @@ of the points in the map.
 ## Conclusions
 - While t-SNE plots often seem to display clusters, the visual clusters can be influenced strongly by the chosen parameterization and therefore a good understanding of the parameters for t-SNE is necessary.
 - t-SNE has been used for visualization in a wide range of applications, including computer security research, music analysis, cancer research, bioinformatics and biomedical signal processing.
+
+## Existing Implementations
+-  sklearn library in python contains this implementation: [sklearn.manifold.TSNE](http://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html)
