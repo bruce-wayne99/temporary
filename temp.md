@@ -30,3 +30,7 @@ of the points in the map.
 
     ![alt text](https://wikimedia.org/api/rest_v1/media/math/render/svg/cae779cfc3a41b382e68850f0381b6a6b7fdede7)
 - The minimizing is performed using gradient descent. The result of this optimization is a map that reflects the similarities between the high-dimensional inputs well.
+
+## Conclusions
+- While t-SNE plots often seem to display clusters, the visual clusters can be influenced strongly by the chosen parameterization and therefore a good understanding of the parameters for t-SNE is necessary.
+- t-SNE has been used for visualization in a wide range of applications, including computer security research, music analysis, cancer research, bioinformatics and biomedical signal processing.
