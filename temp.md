@@ -17,10 +17,16 @@ of the points in the map.
 
   ![alt text](https://wikimedia.org/api/rest_v1/media/math/render/svg/2cc3ef3b4d237787cd82e5ef638d96d642a1e43d)
 - Next p<sub>ij</sub> is calculated using the below formula:
+
   ![alt text](https://wikimedia.org/api/rest_v1/media/math/render/svg/a53cc5533bb4b3b8f18231c58df4e4215546a0fc)
 
 ### Stage-2
-In the second step t-SNE aims to learn a lower dimensional map y1,y2,y3...yN where dimension of yi < dimension of xi that reflects similarities in p<sub>ij</sub> as well as possible. To this end, it measure similarities q<sub>ij</sub> between two points in the map yi and yj using a very similar approach.
+- In the second step t-SNE aims to learn a lower dimensional map y1,y2,y3...yN where dimension of yi < dimension of xi that reflects similarities in p<sub>ij</sub> as well as possible.
+- To this end, it measure similarities q<sub>ij</sub> between two points in the map yi and yj using a very similar approach. q<sub>ij</sub> is defined as follows:
 
-- The locations of the points yi in the map are detemined by minimizing [ Kullback–Leibler divergence](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence) of the second distribution from the first one.
-- The minimizing is performed using gradient descent. The result of this optimization is a map that reflects the similarities between the high-dimensional inputs well. 
+  ![alt text](https://wikimedia.org/api/rest_v1/media/math/render/svg/35a406737842de91ec9edc30efa559d52e6f52a3)
+
+- The locations of the points yi in the map are detemined by minimizing [ Kullback–Leibler divergence](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence) of the second distribution from the first one as follows:
+
+    ![alt text](https://wikimedia.org/api/rest_v1/media/math/render/svg/cae779cfc3a41b382e68850f0381b6a6b7fdede7)
+- The minimizing is performed using gradient descent. The result of this optimization is a map that reflects the similarities between the high-dimensional inputs well.
